@@ -1,0 +1,3 @@
+<MistrnMenu>
+	<WebElement name="mistrnControl" 	locator="linkText" locatorValue="MISTRN Control" 		elementType="menuItem"/>
+</MistrnMenu>

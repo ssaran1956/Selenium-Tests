@@ -1,0 +1,5 @@
+<TicketInventoryMenu>
+	<WebElement name="processTiRecall" 	locator="linkText" locatorValue="Process TI Recall" 		elementType="menuItem"/>
+	<WebElement name="purgeTiBooks" 	locator="linkText" locatorValue="Purge TI Books" 			elementType="menuItem"/>
+</TicketInventoryMenu>
+

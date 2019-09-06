@@ -1,0 +1,4 @@
+<RetailerTrainingMenu>
+	<WebElement name="maintainTrainers" 		locator="linkText" locatorValue="MaintainTrainers" 			elementType="menuItem"/>
+	<WebElement name="maintainTrainingSessions" locator="linkText" locatorValue="Maintain Training Sessions" elementType="menuItem"/>
+</RetailerTrainingMenu>

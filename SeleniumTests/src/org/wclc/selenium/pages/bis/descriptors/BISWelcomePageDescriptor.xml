@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE doc [
+<!ENTITY mainMenu 						SYSTEM "src\org\wclc\selenium\pages\bis\descriptors\menues\MainMenu.xml">
+
+<!ENTITY operationsMenu 				SYSTEM "OperationsMenu.xml">
+<!ENTITY mistrnMenu 					SYSTEM "MistrnMenu.xml">
+<!ENTITY ticketInventoryMenu 			SYSTEM "TicketInventoryMenu.xml">
+<!ENTITY loadAndApplySubsMenu 			SYSTEM "LoadAndApplySubsMenu.xml">
+<!ENTITY importAndExportFilesMenu 		SYSTEM "ImportAndExportFilesMenu.xml">
+<!ENTITY otherDataManagementMenu 		SYSTEM "OtherDataManagementMenu.xml">
+
+<!ENTITY signsAndFixturesMenu 	 		SYSTEM "SignsAndFixturesMenu.xml">
+<!ENTITY assetMovementsMenu 			SYSTEM "AssetMovementsMenu.xml">
+<!ENTITY assetInquiryMenu 				SYSTEM "AssetInquiryMenu.xml">
+<!ENTITY assetAndConsumablesMenu 		SYSTEM "AssetAndConsumablesMenu.xml">
+<!ENTITY controlTablesMenu 				SYSTEM "ControlTablesMenu.xml">
+
+<!ENTITY ticketsAndSupliesMenu			SYSTEM "TicketsAndSupliesMenu.xml"> 
+<!ENTITY ticketsAndSupplyManagementMenu SYSTEM "TicketsAndSupplyManagementMenu.xml">
+<!ENTITY batchOrderManagementMenu		SYSTEM "BatchOrderManagementMenu.xml">
+<!ENTITY taSControlTablesMenu			SYSTEM "TaSControlTablesMenu.xml">
+
+<!ENTITY retailSalesMenu				SYSTEM "RetailSalesMenu.xml">
+<!ENTITY retailSalesInquiriesMenu		SYSTEM "RetailSalesInquiriesMenu.xml">
+<!ENTITY productsMenu					SYSTEM "ProductsMenu.xml">
+<!ENTITY profitReportMaintenanceMenu	SYSTEM "ProfitReportMaintenanceMenu.xml">
+<!ENTITY retailerCompensationMenu		SYSTEM "RetailerCompensationMenu.xml">
+<!ENTITY retailSalesControlTableMenu	SYSTEM "RetailSalesControlTableMenu.xml">
+
+<!ENTITY retailerMasterFileMenu			SYSTEM "RetailerMasterFileMenu.xml">
+<!ENTITY retailerAgreementsMenu			SYSTEM "RetailerAgreementsMenu.xml">
+<!ENTITY retailerTrainingMenu			SYSTEM "RetailerTrainingMenu.xml">
+<!ENTITY formsMenu						SYSTEM "FormsMenu.xml">
+<!ENTITY retControlTablesMenu			SYSTEM "RetControlTablesMenu.xml">
+]>
+<Page name="BISWelcomePage">
+
+	 &mainMenu;
+
+	<WebElements>
+
+	</WebElements>
+</Page>
+<!--
+Possible locators
+className
+id
+cssSelector
+linkText
+name
+partialLinkText
+tagName
+xPath
+-->

@@ -1,0 +1,18 @@
+<RetailSalesMenu>
+	<WebElement name="retailSalesInquiries" 	locator="linkText" locatorValue="Retail Sales Inquiries" 	elementType="menuItem">
+				&retailSalesInquiriesMenu;
+	</WebElement>
+	<WebElement name="products" 				locator="linkText" locatorValue="Products" 					elementType="menuItem">
+				&productsMenu;
+	</WebElement>
+	<WebElement name="profitReportMaintenance" 	locator="linkText" locatorValue="Profit Report Maintenance" elementType="menuItem">
+				&profitReportMaintenanceMenu;
+	</WebElement>
+	<WebElement name="retailerCompensation" 	locator="linkText" locatorValue="Retailer Compensation" 	elementType="menuItem">
+				&retailerCompensationMenu;
+	</WebElement>
+	<WebElement name="retailSalesControlTable" 	locator="linkText" locatorValue="Control Tables" 			elementType="menuItem">
+		&retailSalesControlTableMenu;
+	</WebElement>
+	
+</RetailSalesMenu>

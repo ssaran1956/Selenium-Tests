@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="BISLoginPage">
+	<WebElements>
+		<WebElement name="userId" 		locator="id" locatorValue="txtUserid" 	elementType="input"/>
+		<WebElement name="password" 	locator="id" locatorValue="txtPassword" elementType="input"/>
+		<WebElement name="submitButton" locator="id" locatorValue="lnkLogin" 	elementType="submit"/>
+	</WebElements>
+</Page>
+
+
+<!--
+Possible locators
+className
+id
+cssSelector
+linkText
+name
+partialLinkText
+tagName
+xPath
+-->

@@ -1,0 +1,30 @@
+
+<Menu>
+		<WebElement name="home" 	locator="linkText" locatorValue="Home" 		elementType="menuItem"/>
+		<WebElement name="print" 	locator="linkText" locatorValue="Print" 	elementType="menuItem"/>
+		<WebElement name="help" 	locator="linkText" locatorValue="Help" 		elementType="menuItem"/>
+		<WebElement name="logout" 	locator="linkText" locatorValue="Logout" 	elementType="menuItem"/>
+	
+		<WebElement name="retailerMasterFile" 	locator="linkText" locatorValue="Retailer Master File" 		elementType="menuItem">
+			&retailerMasterFileMenu;
+		</WebElement>
+		
+		<WebElement name="retailSales" 			locator="linkText" locatorValue="Retail Sales" 				elementType="menuItem">
+			&retailSalesMenu;
+		</WebElement>
+		
+		<WebElement name="ticketsAndSuplies" 	locator="linkText" locatorValue="Tickets &amp; Supplies" 	elementType="menuItem">
+			&ticketsAndSupliesMenu;
+		</WebElement>
+		
+		<WebElement name="signsAndFixtures" 	locator="linkText" locatorValue="Signs &amp; Fixtures" 		elementType="menuItem">
+			&signsAndFixturesMenu;
+		</WebElement>
+		
+		<WebElement name="operations" 			locator="linkText" locatorValue="Operations" 				elementType="menuItem">
+			&operationsMenu;
+		</WebElement>
+		
+		<WebElement name="reports" 				locator="linkText" locatorValue="Reports" 					elementType="menuItem"/>
+			
+</Menu>

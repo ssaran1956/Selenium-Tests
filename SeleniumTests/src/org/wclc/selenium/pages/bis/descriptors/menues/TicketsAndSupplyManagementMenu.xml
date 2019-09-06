@@ -1,0 +1,10 @@
+<TicketsAndSupplyManagementMenu>
+
+	<WebElement name="callSchedule" 							locator="linkText" locatorValue="Call Schedule" 								elementType="menuItem"/>
+	<WebElement name="createOrder" 								locator="linkText" locatorValue="Create Order" 									elementType="menuItem"/>
+	<WebElement name="createNTROrder" 							locator="linkText" locatorValue="Create NTR Order" 								elementType="menuItem"/>
+	<WebElement name="retailerTicketandSuppliesInformation" 	locator="linkText" locatorValue="RetailerT icket and Supplies Information" 		elementType="menuItem"/>
+	<WebElement name="assigneNTRCassifications" 				locator="linkText" locatorValue="Assigne NTR Cassifications" 					elementType="menuItem"/>
+	<WebElement name="assignTicketandSuppliesRepToRetailers" 	locator="linkText" locatorValue="Assign Ticket and Supplies Rep To Retailers" 	elementType="menuItem"/>
+
+</TicketsAndSupplyManagementMenu>

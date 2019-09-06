@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="BISLoginPage">
+	<WebElements>
+		<WebElement name="login" 		locator="linkText" locatorValue="here" 	elementType="link"/>
+	</WebElements>
+</Page>
+
+
+<!--
+Possible locators
+className
+id
+cssSelector
+linkText
+name
+partialLinkText
+tagName
+xPath
+-->

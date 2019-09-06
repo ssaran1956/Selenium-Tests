@@ -1,0 +1,28 @@
+<RetControlTablesMenu>
+
+	<WebElement name="affiliations" 			locator="linkText" locatorValue="Affiliations" 				elementType="menuItem"/>
+	<WebElement name="assignSuppliers"			locator="linkText" locatorValue="Assign Suppliers"			elementType="menuItem"/>
+	<WebElement name="agreementTypes" 			locator="linkText" locatorValue="Agreement Types" 			elementType="menuItem"/>
+	<WebElement name="banks"					locator="linkText" locatorValue="Banks"						elementType="menuItem"/>
+	<WebElement name="bankBranches" 			locator="linkText" locatorValue="Bank Branches" 			elementType="menuItem"/>
+	<WebElement name="cities"					locator="linkText" locatorValue="Cities"					elementType="menuItem"/>
+	<WebElement name="classifications" 			locator="linkText" locatorValue="Classifications" 			elementType="menuItem"/>
+	<WebElement name="contactTitles"			locator="linkText" locatorValue="Contact Titles"			elementType="menuItem"/>
+	<WebElement name="equipment" 				locator="linkText" locatorValue="Equipment" 				elementType="menuItem"/>
+	<WebElement name="headOfficeLogReasons"		locator="linkText" locatorValue="Head Office Log Reasons"	elementType="menuItem"/>
+	<WebElement name="networkAdditionalNotes"	locator="linkText" locatorValue="Network Additional Notes" 	elementType="menuItem"/>
+	<WebElement name="networkSuppliers"			locator="linkText" locatorValue="Network Suppliers"			elementType="menuItem"/>
+	<WebElement name="networkTargets" 			locator="linkText" locatorValue="Network Targets" 			elementType="menuItem"/>
+	<WebElement name="networkTypes"				locator="linkText" locatorValue="Network Types"				elementType="menuItem"/>
+	<WebElement name="networkWorkOrderTypes" 	locator="linkText" locatorValue="Network Work Order Types"	elementType="menuItem"/>
+	<WebElement name="organizationContacts"		locator="linkText" locatorValue="Organization Contacts"		elementType="menuItem"/>
+	<WebElement name="probationReasons" 		locator="linkText" locatorValue="Probation Reasons" 		elementType="menuItem"/>
+	<WebElement name="specialFlags"				locator="linkText" locatorValue="Special Flags"				elementType="menuItem"/>
+	<WebElement name="terminalTypes" 			locator="linkText" locatorValue="Terminal Types" 			elementType="menuItem"/>
+	<WebElement name="territories"				locator="linkText" locatorValue="Territories"				elementType="menuItem"/>
+	<WebElement name="territoryAccountReps" 	locator="linkText" locatorValue="Territory Account Reps" 	elementType="menuItem"/>
+	<WebElement name="trainingTypes"			locator="linkText" locatorValue="Training Types"			elementType="menuItem"/>
+	<WebElement name="zones" 					locator="linkText" locatorValue="Zones" 					elementType="menuItem"/>
+	<WebElement name="emailNotification"		locator="linkText" locatorValue="Email Notification"		elementType="menuItem"/>
+	
+</RetControlTablesMenu>

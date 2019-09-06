@@ -1,0 +1,4 @@
+<OtherDataManagementMenu>
+		<WebElement name="modifyChangeOfOwner" 	locator="linkText" locatorValue="Modify Change Of Owner" 	elementType="menuItem"/>
+		<WebElement name="maintainNotificationMessages" 	locator="linkText" locatorValue="Maintain Notification Messages" 	elementType="menuItem"/>
+</OtherDataManagementMenu>

@@ -1,0 +1,14 @@
+<RetailerMasterFileMenu>
+	<WebElement name="retailerAgreements" 		locator="linkText" locatorValue="Retailer Agreements" 				elementType="menuItem">
+				&retailerAgreementsMenu;
+	</WebElement>
+	<WebElement name="retailerTraining" 		locator="linkText" locatorValue="Retailer Training" 			elementType="menuItem">
+				&retailerTrainingMenu;
+	</WebElement>
+	<WebElement name="forms" 	locator="linkText" locatorValue="Forms" 		elementType="menuItem">
+				&formsMenu;
+	</WebElement>
+	<WebElement name="retControlTables" locator="linkText" locatorValue="Control Tables" 	elementType="menuItem">
+				&retControlTablesMenu;
+	</WebElement>
+</RetailerMasterFileMenu>

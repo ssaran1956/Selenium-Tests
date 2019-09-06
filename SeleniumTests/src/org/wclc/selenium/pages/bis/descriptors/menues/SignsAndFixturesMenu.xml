@@ -1,0 +1,16 @@
+<SignsAndFixturesMenu>
+	<WebElement name="assetMovements" 		locator="linkText" locatorValue="Asset Movements" 			elementType="menuItem">
+				&assetMovementsMenu;
+	</WebElement>
+	<WebElement name="assetInquiry" 		locator="linkText" locatorValue="Asset Inquiry" 			elementType="menuItem">
+				&assetInquiryMenu;
+	</WebElement>
+	<WebElement name="assetAndConsumables" 	locator="linkText" locatorValue="Asset &amp; Consumables" 	elementType="menuItem">
+				&assetAndConsumablesMenu;
+	</WebElement>
+	<WebElement name="controlTables" 		locator="linkText" locatorValue="Control Tables" 			elementType="menuItem">
+				&controlTablesMenu;
+	</WebElement>
+	
+</SignsAndFixturesMenu>
+

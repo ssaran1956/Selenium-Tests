@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE doc [
+<!ENTITY mainMenu 						SYSTEM "src\org\wclc\selenium\pages\bis\descriptors\menues\MainMenu.xml">
+
+<!ENTITY operationsMenu 				SYSTEM "OperationsMenu.xml">
+<!ENTITY mistrnMenu 					SYSTEM "MistrnMenu.xml">
+<!ENTITY ticketInventoryMenu 			SYSTEM "TicketInventoryMenu.xml">
+<!ENTITY loadAndApplySubsMenu 			SYSTEM "LoadAndApplySubsMenu.xml">
+<!ENTITY importAndExportFilesMenu 		SYSTEM "ImportAndExportFilesMenu.xml">
+<!ENTITY otherDataManagementMenu 		SYSTEM "OtherDataManagementMenu.xml">
+
+<!ENTITY signsAndFixturesMenu 	 		SYSTEM "SignsAndFixturesMenu.xml">
+<!ENTITY assetMovementsMenu 			SYSTEM "AssetMovementsMenu.xml">
+<!ENTITY assetInquiryMenu 				SYSTEM "AssetInquiryMenu.xml">
+<!ENTITY assetAndConsumablesMenu 		SYSTEM "AssetAndConsumablesMenu.xml">
+<!ENTITY controlTablesMenu 				SYSTEM "ControlTablesMenu.xml">
+
+<!ENTITY ticketsAndSupliesMenu			SYSTEM "TicketsAndSupliesMenu.xml"> 
+<!ENTITY ticketsAndSupplyManagementMenu SYSTEM "TicketsAndSupplyManagementMenu.xml">
+<!ENTITY batchOrderManagementMenu		SYSTEM "BatchOrderManagementMenu.xml">
+<!ENTITY taSControlTablesMenu			SYSTEM "TaSControlTablesMenu.xml">
+
+<!ENTITY retailSalesMenu				SYSTEM "RetailSalesMenu.xml">
+<!ENTITY retailSalesInquiriesMenu		SYSTEM "RetailSalesInquiriesMenu.xml">
+<!ENTITY productsMenu					SYSTEM "ProductsMenu.xml">
+<!ENTITY profitReportMaintenanceMenu	SYSTEM "ProfitReportMaintenanceMenu.xml">
+<!ENTITY retailerCompensationMenu		SYSTEM "RetailerCompensationMenu.xml">
+<!ENTITY retailSalesControlTableMenu	SYSTEM "RetailSalesControlTableMenu.xml">
+
+<!ENTITY retailerMasterFileMenu			SYSTEM "RetailerMasterFileMenu.xml">
+<!ENTITY retailerAgreementsMenu			SYSTEM "RetailerAgreementsMenu.xml">
+<!ENTITY retailerTrainingMenu			SYSTEM "RetailerTrainingMenu.xml">
+<!ENTITY formsMenu						SYSTEM "FormsMenu.xml">
+<!ENTITY retControlTablesMenu			SYSTEM "RetControlTablesMenu.xml">
+]>
+<Page name="BISMistrnControlPage">
+
+	 &mainMenu;
+
+	<WebElements>
+		<WebElement name="summary" 	locator="linkText" locatorValue="Summary" 	elementType="tabLink">
+			
+				<WebElement name="lastProcessedBussinesDate"	locator="id" locatorValue="content:viewFragment1:form1:txtLastCompletedBusinessDate" 		elementType="input" />
+				<WebElement name="dailyProcessStatus" 			locator="id" locatorValue="content:viewFragment1:form1:txtFullDayStatus" 					elementType="input" />
+				<WebElement name="lastProcessedPeriodFrom"		locator="id" locatorValue="content:viewFragment1:form1:txtLastProcessedPeriodFromDate" 		elementType="input" />
+				<WebElement name="lastProcessedPeriodTo"		locator="id" locatorValue="content:viewFragment1:form1:txtLastProcessedPeriodToDate" 		elementType="input" />
+				<WebElement name="partialDayProcessStatus"		locator="id" locatorValue="content:viewFragment1:form1:txtPartialDayStatus" 				elementType="input" />
+				<WebElement name="autoPartialProcessing"		locator="id" locatorValue="content:viewFragment1:form1:txtCurrentPartialDayMISTRNStatus" 	elementType="input" />
+				<WebElement name="mistrnFilesToBeProcessed"		locator="id" locatorValue="content:viewFragment1:form1:ddlMISTRNFilesToBeProcessed" 		elementType="select"/>
+				<WebElement name="newDailyMistrn" 				locator="linkText"  locatorValue="New Daily MISTRN"   										elementType="link"	/>
+				<WebElement name="dailyDetails" 				locator="id"  locatorValue="content:viewFragment1:form1:lnkSummaryDailyDetailsAllowSubmit"	elementType="link"	/>
+				<WebElement name="newPartialDayMistrn" 			locator="linkText"  locatorValue="New Partial Day MISTRN"   								elementType="link"	/>
+				<WebElement name="partialDayDetails" 			locator="id"  locatorValue="content:viewFragment1:form1:lnkSummaryDetailsAllowSubmit"   	elementType="link"	/>
+				<WebElement name="enable" 						locator="linkText"  locatorValue="Enable"   												elementType="link"	/>
+				<WebElement name="disable" 						locator="linkText"  locatorValue="Disable"   												elementType="link"	/>
+				<WebElement name="applySetting" 				locator="linkText"  locatorValue="Apply Setting"   											elementType="link"	/>
+		 
+		 </WebElement>
+		<WebElement name="history" 	locator="linkText" locatorValue="History"   elementType="tabLink">
+		
+				<WebElement name="fromBussinesDate"	locator="id" locatorValue="content:viewFragment1:form1:txtFromBusinessDate" elementType="jq_datepicker" />
+				<WebElement name="toBusinessDate" 	locator="id" locatorValue="content:viewFragment1:form1:txtToBusinessDate" 	elementType="jq_datepicker" />
+				<WebElement name="mistrnType"		locator="id" locatorValue="content:viewFragment1:form1:ddlMistrnType" 		elementType="select"/>
+				<WebElement name="clear" 	locator="linkText"  locatorValue="Clear"   elementType="link"	/>
+				<WebElement name="search" 	locator="linkText"  locatorValue="Search"  elementType="link"	/>
+				<WebElement name="cancel" 	locator="linkText"  locatorValue="Cancel"  elementType="link"	/>
+				
+				<WebElement name="controlHistoryTable"	locator="xpath" locatorValue=".//*[@id='content:viewFragment1:form1:controlHistoryTable']" elementType="table" 	 thXPath="/thead" tbodyXPath="/tbody"/>
+				
+		</WebElement>
+		
+		<WebElement name="canceltButton" locator="id" locatorValue="content:viewFragment1:form1:lnkCancelAllowSubmit" 	elementType="link"/>
+	</WebElements>
+</Page>
+<!--
+Possible locators
+className
+id
+cssSelector
+linkText
+name
+partialLinkText
+tagName
+xPath
+-->
+

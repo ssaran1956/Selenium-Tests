@@ -1,0 +1,9 @@
+<ProductsMenu>
+
+	<WebElement name="maintainBetTypeCodes" 		locator="linkText" locatorValue="Maintain Bet Type Codes" 		elementType="menuItem"/>
+	<WebElement name="maintainOnlineDrawControl" 	locator="linkText" locatorValue="Maintain Online Draw Control" 	elementType="menuItem"/>
+	<WebElement name="maintainOnlineDraws" 			locator="linkText" locatorValue="Maintain Online Draws" 		elementType="menuItem"/>
+	<WebElement name="maintainProducts" 			locator="linkText" locatorValue="Maintain Products" 			elementType="menuItem"/>
+	<WebElement name="maintainScratchNWinDraws" 	locator="linkText" locatorValue="Maintain Scratch 'N Win Draws" elementType="menuItem"/>
+	
+</ProductsMenu>

@@ -1,0 +1,15 @@
+<RetailerAgreementsMenu>
+	<WebElement name="enterApplication" 				locator="linkText" locatorValue="Enter Application" 					elementType="menuItem"/>
+	<WebElement name="changeofOwner" 					locator="linkText" locatorValue="Change of Owner" 						elementType="menuItem"/>
+	<WebElement name="retailerRelocation" 				locator="linkText" locatorValue="Retailer Relocation" 					elementType="menuItem"/>
+	<WebElement name="searchforRetailer" 				locator="linkText" locatorValue="Search for Retailer" 					elementType="menuItem"/>
+	<WebElement name="mainainBusinessEntities" 			locator="linkText" locatorValue="Mainain Business Entities" 			elementType="menuItem"/>
+	<WebElement name="kioskSummaryInformation" 			locator="linkText" locatorValue="Kiosk Summary Information" 			elementType="menuItem"/>
+	<WebElement name="assignAffiliations" 				locator="linkText" locatorValue="Assign Affiliations" 					elementType="menuItem"/>
+	<WebElement name="assignSpecialFlags" 				locator="linkText" locatorValue="Assign Special Flags" 					elementType="menuItem"/>
+	<WebElement name="reAssignTerritories" 				locator="linkText" locatorValue="Re-Assign Territories" 				elementType="menuItem"/>
+	<WebElement name="maintainBankAccountInformation" 	locator="linkText" locatorValue="Maintain Bank Account Information" 	elementType="menuItem"/>
+	<WebElement name="ipAddressInquiry" 				locator="linkText" locatorValue="IP Address Inquiry" 					elementType="menuItem"/>
+	<WebElement name="searchForNetworkWorkOrders" 		locator="linkText" locatorValue="Search For Network Work Orders" 		elementType="menuItem"/>
+	<WebElement name="assigneNetworkWorkOrdersforSLA" 	locator="linkText" locatorValue="Assigne Network Work Orders for SLA" 	elementType="menuItem"/>
+</RetailerAgreementsMenu>

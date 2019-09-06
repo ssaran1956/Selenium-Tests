@@ -1,0 +1,5 @@
+<RetailerCompensationMenu>
+	<WebElement name="compensationHoldFlag" 		locator="linkText" locatorValue="Compensation Hold Flag" 			elementType="menuItem"/>
+	<WebElement name="compensationExcludedProducts" locator="linkText" locatorValue="Compensation ExcludedP roducts" 	elementType="menuItem"/>
+	<WebElement name="processRetailerCompensation" 	locator="linkText" locatorValue="Process Retailer Compensation" 	elementType="menuItem"/>
+</RetailerCompensationMenu>

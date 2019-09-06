@@ -1,0 +1,7 @@
+<ControlTablesMenu>
+	<WebElement name="assetsMovementLocks" 	locator="linkText" locatorValue="Assets Movement Locks" elementType="menuItem"/>
+	<WebElement name="consumables" 			locator="linkText" locatorValue="Consumables" 			elementType="menuItem"/>
+	<WebElement name="items" 				locator="linkText" locatorValue="Items" 				elementType="menuItem"/>
+	<WebElement name="warehouse" 			locator="linkText" locatorValue="Warehouse" 			elementType="menuItem"/>
+</ControlTablesMenu>
+

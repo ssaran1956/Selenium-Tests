@@ -1,0 +1,13 @@
+<TicketsAndSupliesMenu>
+
+	<WebElement name="ticketsAndSupplyManagement" 	locator="linkText" locatorValue="Tickets And Supply Management" elementType="menuItem">
+				&ticketsAndSupplyManagementMenu;
+	</WebElement>
+	<WebElement name="batchOrderManagement" 		locator="linkText" locatorValue="Batch Order Management" 		elementType="menuItem">
+				&batchOrderManagementMenu;
+	</WebElement>
+	<WebElement name="controlTables" 				locator="linkText" locatorValue="Control Tables" 				elementType="menuItem">
+				&taSControlTablesMenu;
+	</WebElement>
+	
+</TicketsAndSupliesMenu>

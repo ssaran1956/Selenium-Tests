@@ -1,0 +1,3 @@
+<LoadAndApplySubs>
+	<WebElement name="loadAndApplySubscriptionDrawSales"   locator="linkText" locatorValue="Load and Apply Subscription Draw Sales" elementType="menuItem"/>
+</LoadAndApplySubs>

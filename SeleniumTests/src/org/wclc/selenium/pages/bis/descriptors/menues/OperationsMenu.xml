@@ -1,0 +1,19 @@
+
+<OperationsMenu>
+	<WebElement name="mistrn" 				locator="linkText" locatorValue="MISTRN" 				elementType="menuItem">
+				&mistrnMenu;
+	</WebElement>
+	<WebElement name="ticketInventory" 		locator="linkText" locatorValue="Ticket Inventory" 			elementType="menuItem">
+				&ticketInventoryMenu;
+	</WebElement>
+	<WebElement name="loadAndApplySubs" 	locator="linkText" locatorValue="Load And Apply Subs" 		elementType="menuItem">
+				&loadAndApplySubsMenu;
+	</WebElement>
+	<WebElement name="importAndExportFiles" locator="linkText" locatorValue="Import And Export Files" 	elementType="menuItem">
+				&importAndExportFilesMenu;
+	</WebElement>
+	<WebElement name="otherDataManagement" 	locator="linkText" locatorValue="Other Data Management" 	elementType="menuItem">
+				&otherDataManagementMenu;
+	</WebElement>
+	<WebElement name="links" 				locator="linkText" locatorValue="Links" 					elementType="menuItem"/>
+</OperationsMenu>

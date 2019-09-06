@@ -1,0 +1,9 @@
+<TaSControlTablesMenu>
+	<WebElement name="callFrequencyTypes" 	locator="linkText" locatorValue="Call Frequency Types" 		elementType="menuItem"/>
+	<WebElement name="deliveryInstructions" locator="linkText" locatorValue="Delivery Instructions" 	elementType="menuItem"/>
+	<WebElement name="merchandisers" 		locator="linkText" locatorValue="Merchandisers" 			elementType="menuItem"/>
+	<WebElement name="promotionalMessages" 	locator="linkText" locatorValue="Promotional Messages" 		elementType="menuItem"/>
+	<WebElement name="nTRClassifications" 	locator="linkText" locatorValue="NTR Classifications" 		elementType="menuItem"/>
+	<WebElement name="productsandSupplies" 	locator="linkText" locatorValue="Products and Supplies" 	elementType="menuItem"/>
+	<WebElement name="ticketandSupplyReps" 	locator="linkText" locatorValue="Ticket and Supply Reps"	elementType="menuItem"/>
+</TaSControlTablesMenu>

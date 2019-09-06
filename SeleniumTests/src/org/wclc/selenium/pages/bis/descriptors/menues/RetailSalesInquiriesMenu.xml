@@ -1,0 +1,4 @@
+<RetailSalesInquiriesMenu>
+	<WebElement name="convenienceKeySalesInquiry" 	locator="linkText" locatorValue="Convenience Key Sales Inquiry" elementType="menuItem"/>
+	<WebElement name="productSaleInquiry" 			locator="linkText" locatorValue="Product Sale Inquiry" 			elementType="menuItem"/>
+</RetailSalesInquiriesMenu>

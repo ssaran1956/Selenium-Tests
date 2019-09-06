@@ -1,0 +1,5 @@
+<AssetMovementsMenu>
+	<WebElement name="workOrderRequest" 		locator="linkText" locatorValue="Work Order Request" 		elementType="menuItem"/>
+	<WebElement name="manageAssetLocation" 		locator="linkText" locatorValue="Manage Asset Location" 	elementType="menuItem"/>
+	<WebElement name="sinsAndFixturesAssets" 	locator="linkText" locatorValue="Sins And Fixtures Assets" 	elementType="menuItem"/>
+</AssetMovementsMenu>

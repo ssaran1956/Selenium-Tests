@@ -1,0 +1,4 @@
+<ImportAndExportFiles>
+		<WebElement name="retailerCompensationFileExport" locator="linkText" locatorValue="Retailer Compensation File Export" 	elementType="menuItem"/>
+		<WebElement name="importWeeklyRetailerInvoicingInfo" locator="linkText" locatorValue="Import Weekly Retailer Invoicing Info" 	elementType="menuItem"/>
+</ImportAndExportFiles>

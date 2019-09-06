@@ -1,0 +1,3 @@
+<AssetInquiryMenu>
+	<WebElement name="locationAssetsInquiry" 	locator="linkText" locatorValue="Location Assets Inquiry" 	elementType="menuItem"/>
+</AssetInquiryMenu>

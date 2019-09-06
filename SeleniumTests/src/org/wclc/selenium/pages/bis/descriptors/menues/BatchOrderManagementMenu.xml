@@ -1,0 +1,4 @@
+<BatchOrderManagementMenu>
+	<WebElement name="orderHistoryInquiry" 	locator="linkText" locatorValue="Order History Inquiry" elementType="menuItem"/>
+	<WebElement name="batchManagement" 		locator="linkText" locatorValue="Batch Management" 		elementType="menuItem"/>
+</BatchOrderManagementMenu>

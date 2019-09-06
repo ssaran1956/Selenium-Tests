@@ -1,0 +1,3 @@
+<ProfitReportMaintenanceMenu>
+	<WebElement name="importNetworkCosts" locator="linkText" locatorValue="Import Network Costs" 	elementType="menuItem"/>
+</ProfitReportMaintenanceMenu>

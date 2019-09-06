@@ -1,0 +1,4 @@
+<FormsMenu>
+	<WebElement name="applicationForm" 	locator="linkText" locatorValue="Application Form" 	elementType="menuItem"/>
+	<WebElement name="agreementForm"	locator="linkText" locatorValue="Agreement Form"	elementType="menuItem"/>
+</FormsMenu>

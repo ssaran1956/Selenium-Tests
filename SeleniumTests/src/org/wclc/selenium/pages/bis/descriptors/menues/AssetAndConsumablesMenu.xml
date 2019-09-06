@@ -1,0 +1,4 @@
+<AssetAndConsumablesMenu>
+	<WebElement name="orderAssetsAndConsumables" 	locator="linkText" locatorValue="Order Assets &amp; Consumables" 	elementType="menuItem"/>
+	<WebElement name="createNewFiscalYear" 			locator="linkText" locatorValue="Create New Fiscal Year" 			elementType="menuItem"/>
+</AssetAndConsumablesMenu>
