@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tests>
+	<Test id="testBISMistrnControlPage-Summary">
+		<Inputs>
+	
+		</Inputs>
+		<Outputs>
+	
+		</Outputs>
+	</Test>
+
+	<Test id="testMistrnControlPage-History">
+		<Inputs>
+			<WebElement name="fromBussinesDate"	in-value="May 20, 2014" />
+			<WebElement name="toBusinessDate" 	in-value="May 25, 2014" />
+			<WebElement name="mistrnType"		in-value="Daily"/>
+		</Inputs>
+		<Actions>
+			<WebElement name="search" 	event="click" repopulatePage="true"/>
+			<WebElement name="controlHistoryTable"    event="sortTable"  sortButtonText="Business Day" />
+		</Actions>
+		<Outputs>
+			<WebElement name="controlHistoryTable"  action="check">
+				<Check name="TableRowCount" 		value="6"/>
+				<Check name="TableColumnCount" 	    value="7"/>
+				<Check name="RowValues" rowId="1">
+					<Value id="0" value="Daily"/>
+					<Value id="1" value="May 20, 2014"/>
+					<Value id="2" value="May 20, 2014 02:00"/>
+					<Value id="3" value="May 21, 2014 02:00"/>
+					<Value id="4" value="solivenj"/>
+					<Value id="5" value="Completed"/>
+					<Value id="6" value="Details"/>
+				</Check>
+				<Check name="ColumnTitles" >
+					<Value id="0" value="Type"/>
+					<Value id="1" value="Business Day"/>
+					<Value id="2" value="From Time"/>
+					<Value id="3" value="To Time"/>
+					<Value id="4" value="UserId"/>
+					<Value id="5" value="Status"/>
+					<Value id="6" value="Actions"/>
+				</Check>
+			</WebElement>
+		
+		</Outputs>
+	</Test>
+	
+	<!--Test id="testBISEnterApplication">
+		<Inputs>
+			<WebElement name="organizations"	in-value="MB - Manitoba Liquor &amp; Lotteries"/>
+			<WebElement name="postalCode"		in-value="R6W 0L4"/>
+		</Inputs>
+		<Actions>
+			<WebElement name="search" 	event="click" repopulatePage="true"/>
+		</Actions>
+		<Outputs>
+			<WebElement name="locationsTable"  action="check">
+				<Check name="TableRowCount" 		value="1"/>
+				<Check name="TableColumnCount" 	    value="7"/>
+				<Check name="RowValues" rowId="1">
+					<Value id="0" value="AL64"/>
+					<Value id="1" value="27241"/>
+					<Value id="2" value="Petro Canada"/>
+					<Value id="3" value="Active"/>
+					<Value id="4" value="1525 Diamond Drive"/>
+					<Value id="5" value="Winkler"/>
+					<Value id="6" value="Edit"/>
+				</Check>
+			</WebElement>
+		</Outputs>
+	</Test-->
+</Tests>

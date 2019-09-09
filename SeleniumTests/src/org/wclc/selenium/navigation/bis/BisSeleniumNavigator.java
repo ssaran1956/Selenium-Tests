@@ -4,6 +4,7 @@
 package org.wclc.selenium.navigation.bis;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -64,7 +65,8 @@ public class BisSeleniumNavigator extends Thread{
 	
 	public void run() {
 		String documentFileName = "Navigation.xml";
-		this.document = this.getDocument(NavigatorLocator.class, documentFileName);
+//		this.document = this.getDocument(NavigatorLocator.class, documentFileName);
+		this.document = this.getDocument(documentFileName);
 		this.webDriverClassName = this.document.getDocumentElement().getAttributes().getNamedItem("web-driver").getNodeValue();	
 //		this.executeNavigations();//"navigateToLoginPage");//"navigateToMistrnPage");
 		
@@ -429,6 +431,20 @@ public class BisSeleniumNavigator extends Thread{
 			DocumentBuilderFactory factory =  DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			InputStream instr = fileLocator.getResourceAsStream(fileName);
+			document = builder.parse(instr);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return document;
+	}
+	
+	private Document getDocument(String fileName){
+		Document document = null;
+		try {
+			DocumentBuilderFactory factory =  DocumentBuilderFactory.newInstance();
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			File initialFile = new File(fileName);
+			InputStream instr = new FileInputStream(initialFile);
 			document = builder.parse(instr);
 		} catch (Exception e) {
 			e.printStackTrace();

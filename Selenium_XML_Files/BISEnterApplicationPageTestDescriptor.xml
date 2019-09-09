@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tests>
+<Test id="testBISEnterApplication">
+		<Inputs>
+			<WebElement name="organizations"	in-value="MB - Manitoba Liquor &amp; Lotteries"/>
+			<WebElement name="postalCode"		in-value="R6W 0L4"/>
+		</Inputs>
+		<Actions>
+			<WebElement name="search" 	event="click" repopulatePage="true"/>
+		</Actions>
+		<Outputs>
+			<WebElement name="locationsTable"  action="check">
+				<Check name="TableRowCount" 		value="1"/>
+				<Check name="TableColumnCount" 	    value="7"/>
+				<Check name="RowValues" rowId="1">
+					<Value id="0" value="AL64"/>
+					<Value id="1" value="27241"/>
+					<Value id="2" value="Petro Canada"/>
+					<Value id="3" value="Active"/>
+					<Value id="4" value="1525 Diamond Drive"/>
+					<Value id="5" value="Winkler"/>
+					<Value id="6" value="Edit"/>
+				</Check>
+				<Check name="ColumnTitles" >
+					<Value id="0" value="Ret No."/>
+					<Value id="1" value="Agr. No."/>
+					<Value id="2" value="Location Name"/>
+					<Value id="3" value="Status"/>
+					<Value id="4" value="Address"/>
+					<Value id="5" value="City"/>
+					<Value id="6" value="Actions"/>
+				</Check>
+			</WebElement>
+		</Outputs>
+	</Test>
+</Tests>

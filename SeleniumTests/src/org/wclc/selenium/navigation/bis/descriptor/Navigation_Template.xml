@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Url protocol="https" host="www.isisqa5.wclc.com" port="" path="ISISLoginWebApplication/login.jsp" arguments=""/>
+			<EndPoint pageName="BISLoginPage"/-->
+			<!--Url protocol="http" host="DEV130.hq.wclc.com" port="8888" path="ISISLoginWebApplication/login.jsp" arguments="userid=ISIS_ADU_A" /-->
+<!--Navigations web-driver="org.openqa.selenium.ie.InternetExplorerDriver" -->
+<Navigations web-driver="CHROME" >
+	<ThreadNavigations name="thread2">
+		<Navigation id="navigateToLoginPageThenToWelcomePage">
+		<Navigate id="getToLoginPage"  pageName="BISStartPage">
+			<Url protocol="https" host="www.isisqa5.wclc.com" port="" path="ISISLoginWebApplication/login.jsp" arguments=""/>
+			<EndPoint pageName="BISLoginPage"/>
+			<!--Url protocol="http" host="localhost" port="8888" path="ISISLoginWebApplication/login.jsp" arguments="userid=ISIS_ADU_A" />
+			<EndPoint pageName="BISWelcomePage"/-->
+		</Navigate>
+		<Navigate id="login"  pageName="BISLoginPage">
+			<SendKeys>
+				<WebElement name="userId"   value="ISIS_ADU_A" />
+				<WebElement name="password" value="Password4!" />
+			</SendKeys>
+			<Events>
+				<Event name="submit">
+					<WebElement name="submitButton" />
+				</Event>
+			</Events>
+			<EndPoint pageName="BISWelcomePage"/>
+		</Navigate>
+	</Navigation>
+		<Navigation id="navigateToBISMistrnControlPageTest">
+
+			<Navigate id="goTo-Operations-Mistrn-MistrnControl" pageName="BISWelcomePage">
+			<Events>
+				<Event name="clickMenuItem">
+					<WebElement name="operations" />
+				</Event>
+				<Event name="clickMenuItem">
+					<WebElement name="mistrn" />
+				</Event>
+				<Event name="clickMenuItem">
+					<WebElement name="mistrnControl" />
+				</Event>
+			</Events>
+			<EndPoint pageName="BISMistrnControlPage" />		
+		</Navigate>
+		
+		<Navigate id="goTo-Operations-Mistrn-MistrnControl-History" pageName="BISMistrnControlPage">
+			<Events>
+				<Event name="click">
+					<WebElement name="history" />
+				</Event>
+			</Events>
+			<EndPoint pageName="BISMistrnControlPage">
+				<Test testId="testMistrnControlPage-History"/>
+			</EndPoint>
+		</Navigate>
+		
+		<Navigate id="btoWelcomePage" pageName="BISMistrnControlPage">
+			<Events>
+				<Event name="click">
+					<WebElement name="canceltButton" />
+				</Event>
+			</Events>
+			<EndPoint pageName="BISWelcomePage" />
+		</Navigate>		
+
+		</Navigation>
+	</ThreadNavigations>
+
+	<ThreadNavigations name="thread1">
+	<Navigation id="navigateToLoginPageThenToWelcomePage">
+		<Navigate id="getToBISWelcomePage"  pageName="BISStartPage">
+			<Url protocol="https" host="www.isisqa5.wclc.com" port="" path="ISISLoginWebApplication/login.jsp" arguments=""/>
+			<EndPoint pageName="BISLoginPage"/>
+			<!--Url protocol="http" host="localhost" port="8888" path="ISISLoginWebApplication/login.jsp" arguments="userid=ISIS_ADU_A" />
+			<EndPoint pageName="BISWelcomePage"/-->
+		</Navigate>
+		<Navigate id="login"  pageName="BISLoginPage">
+			<SendKeys>
+				<WebElement name="userId"   value="ISIS_ADU_A" />
+				<WebElement name="password" value="Password4!" />
+			</SendKeys>
+			<Events>
+				<Event name="submit">
+					<WebElement name="submitButton" />
+				</Event>
+			</Events>
+			<EndPoint pageName="BISWelcomePage"/>
+		</Navigate>
+	</Navigation>
+		<Navigation id="navigateToBISEnterApplicationPageTest">
+
+			<Navigate id="goTo-Retail-Master-File" pageName="BISWelcomePage">
+			<Events>
+				<Event name="clickMenuItem">
+					<WebElement name="retailerMasterFile" />
+				</Event>
+				<Event name="clickMenuItem">
+					<WebElement name="retailerAgreements" />
+				</Event>
+				<Event name="clickMenuItem">
+					<WebElement name="enterApplication" />
+				</Event>
+			</Events>
+			<EndPoint pageName="BISEnterApplicationPage">
+				<Test testId="testBISEnterApplication"/>
+			</EndPoint>		
+		</Navigate>
+		
+		
+		<Navigate id="btoWelcomePage" pageName="BISEnterApplicationPage">
+			<Events>
+				<Event name="click">
+					<WebElement name="cancel" />
+				</Event>
+			</Events>
+			<EndPoint pageName="BISWelcomePage" />
+		</Navigate>		
+
+		</Navigation>
+	</ThreadNavigations>
+	
+	<ThreadNavigations name="thread3">
+	<Navigation id="navigateToLoginPageThenToWelcomePage">
+		<Navigate id="getToLoginPage"  pageName="BISStartPage">
+			<Url protocol="https" host="www.isisqa5.wclc.com" port="" path="ISISLoginWebApplication/login.jsp" arguments=""/>
+			<EndPoint pageName="BISLoginPage"/>
+			<!--Url protocol="http" host="localhost" port="8888" path="ISISLoginWebApplication/login.jsp" arguments="userid=ISIS_ADU_A" />
+			<EndPoint pageName="BISWelcomePage"/-->
+		</Navigate>
+		<Navigate id="login"  pageName="BISLoginPage">
+			<SendKeys>
+				<WebElement name="userId"   value="ISIS_ADU_A" />
+				<WebElement name="password" value="Password4!" />
+			</SendKeys>
+			<Events>
+				<Event name="submit">
+					<WebElement name="submitButton" />
+				</Event>
+			</Events>
+			<EndPoint pageName="BISWelcomePage"/>
+		</Navigate>
+	</Navigation>
+		<Navigation id="navigateToBISMistrnControlPageTest">
+
+			<Navigate id="goTo-Operations-Mistrn-MistrnControl" pageName="BISWelcomePage">
+			<Events>
+				<Event name="clickMenuItem">
+					<WebElement name="operations" />
+				</Event>
+				<Event name="clickMenuItem">
+					<WebElement name="mistrn" />
+				</Event>
+				<Event name="clickMenuItem">
+					<WebElement name="mistrnControl" />
+				</Event>
+			</Events>
+			<EndPoint pageName="BISMistrnControlPage" />		
+		</Navigate>
+		
+		<Navigate id="goTo-Operations-Mistrn-MistrnControl-History" pageName="BISMistrnControlPage">
+			<Events>
+				<Event name="click">
+					<WebElement name="history" />
+				</Event>
+			</Events>
+			<EndPoint pageName="BISMistrnControlPage">
+				<Test testId="testMistrnControlPage-History"/>
+			</EndPoint>
+		</Navigate>
+		
+		<Navigate id="btoWelcomePage" pageName="BISMistrnControlPage">
+			<Events>
+				<Event name="click">
+					<WebElement name="canceltButton" />
+				</Event>
+			</Events>
+			<EndPoint pageName="BISWelcomePage" />
+		</Navigate>		
+
+		</Navigation>
+	</ThreadNavigations>
+	
+</Navigations>
