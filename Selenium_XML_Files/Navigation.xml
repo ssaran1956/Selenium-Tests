@@ -3,16 +3,7 @@
 			<EndPoint pageName="BISLoginPage"/-->
 			<!--Url protocol="http" host="DEV130.hq.wclc.com" port="8888" path="ISISLoginWebApplication/login.jsp" arguments="userid=ISIS_ADU_A" /-->
 <!--Navigations web-driver="org.openqa.selenium.ie.InternetExplorerDriver" -->
-<Navigations web-driver="CHROME" >
-	<ThreadNavigations name="thread2">
-		<Navigation id="navigateToLoginPageThenToWelcomePage">
-		<Navigate id="getToLoginPage"  pageName="BISStartPage">
-			<Url protocol="https" host="www.isisqa5.wclc.com" port="" path="ISISLoginWebApplication/login.jsp" arguments=""/>
-			<EndPoint pageName="BISLoginPage"/>
-			<!--Url protocol="http" host="localhost" port="8888" path="ISISLoginWebApplication/login.jsp" arguments="userid=ISIS_ADU_A" />
-			<EndPoint pageName="BISWelcomePage"/-->
-		</Navigate>
-		<Navigate id="login"  pageName="BISLoginPage">
+<!--Navigate id="login"  pageName="BISLoginPage">
 			<SendKeys>
 				<WebElement name="userId"   value="ISIS_ADU_A" />
 				<WebElement name="password" value="Password4!" />
@@ -23,7 +14,17 @@
 				</Event>
 			</Events>
 			<EndPoint pageName="BISWelcomePage"/>
+		</Navigate-->
+<!--Navigations web-driver="CHROME" -->
+<Navigations web-driver="IE" >
+	<ThreadNavigations name="thread2">
+		<Navigation id="navigateToLoginPageThenToWelcomePage">
+		<Navigate id="getToLoginPage"  pageName="BISStartPage">
+			
+			<Url protocol="http" host="DEV194" port="8888" path="ISISLoginWebApplication/login.jsp" arguments="userid=ISIS_ADU_A" />
+			<EndPoint pageName="BISWelcomePage"/>
 		</Navigate>
+		
 	</Navigation>
 		<Navigation id="navigateToBISMistrnControlPageTest">
 
