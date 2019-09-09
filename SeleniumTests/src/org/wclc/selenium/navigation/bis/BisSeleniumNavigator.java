@@ -6,6 +6,7 @@ package org.wclc.selenium.navigation.bis;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -407,7 +408,8 @@ public class BisSeleniumNavigator extends Thread{
 				String pageName = endPointNode.getAttributes().getNamedItem("pageName").getNodeValue();
 				String testId   = nde.getAttributes().getNamedItem("testId").getNodeValue();
 				StringBuffer fileName = new StringBuffer(pageName).append("TestDescriptor.xml");
-				Document document = this.getDocument(TestDescriptorLocator.class, fileName.toString());
+//				Document document = this.getDocument(TestDescriptorLocator.class, fileName.toString());
+				Document document = this.getDocument(fileName.toString());
 				NodeList tests = document.getDocumentElement().getElementsByTagName("Test");
 				for (int i = 0; i < tests.getLength(); i++) {
 					Node test = tests.item(i);
@@ -443,7 +445,8 @@ public class BisSeleniumNavigator extends Thread{
 		try {
 			DocumentBuilderFactory factory =  DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			File initialFile = new File(fileName);
+			URL fileUrl = getClass().getResource("/"+fileName);
+			File initialFile = new File(fileUrl.getFile());
 			InputStream instr = new FileInputStream(initialFile);
 			document = builder.parse(instr);
 		} catch (Exception e) {
