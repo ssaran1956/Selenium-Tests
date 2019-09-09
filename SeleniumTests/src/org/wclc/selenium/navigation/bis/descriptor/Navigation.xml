@@ -4,7 +4,7 @@
 			<!--Url protocol="http" host="DEV130.hq.wclc.com" port="8888" path="ISISLoginWebApplication/login.jsp" arguments="userid=ISIS_ADU_A" /-->
 <!--Navigations web-driver="org.openqa.selenium.ie.InternetExplorerDriver" -->
 <Navigations web-driver="CHROME" >
-	<ThreadNavigations name="thread1">
+	<ThreadNavigations name="thread2">
 		<Navigation id="navigateToLoginPageThenToWelcomePage">
 		<Navigate id="getToLoginPage"  pageName="BISStartPage">
 			<Url protocol="https" host="www.isisqa5.wclc.com" port="" path="ISISLoginWebApplication/login.jsp" arguments=""/>
@@ -65,9 +65,9 @@
 		</Navigation>
 	</ThreadNavigations>
 
-	<ThreadNavigations name="thread2">
+	<ThreadNavigations name="thread1">
 	<Navigation id="navigateToLoginPageThenToWelcomePage">
-		<Navigate id="getToLoginPage"  pageName="BISStartPage">
+		<Navigate id="getToBISWelcomePage"  pageName="BISStartPage">
 			<Url protocol="https" host="www.isisqa5.wclc.com" port="" path="ISISLoginWebApplication/login.jsp" arguments=""/>
 			<EndPoint pageName="BISLoginPage"/>
 			<!--Url protocol="http" host="localhost" port="8888" path="ISISLoginWebApplication/login.jsp" arguments="userid=ISIS_ADU_A" />
